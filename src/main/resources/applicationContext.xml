@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+    <context:annotation-config />
+
+    <bean id="zkRouterConnection" class="com.bosszhipin.bdc.router.zk.ZKRouterConnection">
+        <constructor-arg name="hosts" value="192.168.254.103:2181"/>
+        <constructor-arg name="session" value="2000"/>
+        <constructor-arg name="rootPath" value="/bdc_router"/>
+    </bean>
+
+    <bean id="routerZK" class="org.apache.zookeeper.ZooKeeper">
+        <constructor-arg name="connectString" value="192.168.254.103:2181"/>
+        <constructor-arg name="sessionTimeout" value="2000"/>
+        <constructor-arg name="watcher" value="/bdc_router"/>
+    </bean>
+
+</beans>
