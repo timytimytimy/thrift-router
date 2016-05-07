@@ -39,7 +39,7 @@ public class RouterServer {
             try {
                 //获取客户端连接
                 clientSocket = serverSocket.accept();
-                logger.info("accept one client {}", clientSocket.getRemoteSocketAddress());
+                logger.info("Accept one client {}", clientSocket.getRemoteSocketAddress());
                 //启动数据转换接口
                 exec.execute(new TransportSender(clientSocket));
 

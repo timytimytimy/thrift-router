@@ -1,6 +1,7 @@
 package com.bosszhipin.bdc.thrift.server;
 
 import org.apache.commons.lang3.StringUtils;
+import org.apache.thrift.TMultiplexedProcessor;
 import org.apache.thrift.TProcessor;
 import org.apache.thrift.protocol.TCompactProtocol;
 import org.apache.thrift.server.TThreadedSelectorServer;
@@ -70,8 +71,15 @@ public class ThriftServer {
         return processor;
     }
 
+    private String serviceName(Class<?> classType) {
+//        String[] items = classType.getName().split(".");
+//        return items[items.length - 1];
+        return classType.getName();
+    }
+
     private void initServer() throws Exception {
-        TProcessor processor = getTProcessor(this.clazz);
+        TMultiplexedProcessor processor = new TMultiplexedProcessor();
+        processor.registerProcessor(serviceName(this.clazz), getTProcessor(this.clazz));
         TNonblockingServerSocket serverSocket = new TNonblockingServerSocket(this.port);
         TThreadedSelectorServer.Args args = new TThreadedSelectorServer.Args(serverSocket);
         args.processor(processor);
