@@ -3757,3 +3757,165 @@ org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = 
 	at com.bosszhipin.bdc.zk.ZKRouterConnection$Ping.run(ZKRouterConnection.java:105)
 	at java.util.TimerThread.mainLoop(Timer.java:555)
 	at java.util.TimerThread.run(Timer.java:505)
+ERROR [Timer-1] 2016-05-07 21:45:48,404 ZKRouterConnection.java run (line 115) zookeeper ping error
+org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /bdc_router
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:99)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.getChildren(ZooKeeper.java:1532)
+	at org.apache.zookeeper.ZooKeeper.getChildren(ZooKeeper.java:1560)
+	at com.bosszhipin.bdc.router.zk.ZKRouterConnection$Ping.run(ZKRouterConnection.java:105)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+ERROR [Timer-0] 2016-05-07 21:45:48,404 ZKRouterConnection.java run (line 58) zookeeper reconnect error
+org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /bdc_router
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:99)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.getChildren(ZooKeeper.java:1532)
+	at org.apache.zookeeper.ZooKeeper.getChildren(ZooKeeper.java:1560)
+	at com.bosszhipin.bdc.router.zk.ZKRouterConnection$Reconnecter.run(ZKRouterConnection.java:55)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+ERROR [Timer-0] 2016-05-07 21:45:58,498 ZKRouterConnection.java run (line 58) zookeeper reconnect error
+org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /bdc_router
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:99)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.getChildren(ZooKeeper.java:1532)
+	at org.apache.zookeeper.ZooKeeper.getChildren(ZooKeeper.java:1560)
+	at com.bosszhipin.bdc.router.zk.ZKRouterConnection$Reconnecter.run(ZKRouterConnection.java:55)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+ERROR [Timer-1] 2016-05-07 21:45:58,498 ZKRouterConnection.java run (line 115) zookeeper ping error
+org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /bdc_router
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:99)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.getChildren(ZooKeeper.java:1532)
+	at org.apache.zookeeper.ZooKeeper.getChildren(ZooKeeper.java:1560)
+	at com.bosszhipin.bdc.router.zk.ZKRouterConnection$Ping.run(ZKRouterConnection.java:105)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+ERROR [Timer-0] 2016-05-07 21:46:08,599 ZKRouterConnection.java run (line 58) zookeeper reconnect error
+org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /bdc_router
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:99)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.getChildren(ZooKeeper.java:1532)
+	at org.apache.zookeeper.ZooKeeper.getChildren(ZooKeeper.java:1560)
+	at com.bosszhipin.bdc.router.zk.ZKRouterConnection$Reconnecter.run(ZKRouterConnection.java:55)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+ERROR [Timer-1] 2016-05-07 21:46:08,599 ZKRouterConnection.java run (line 115) zookeeper ping error
+org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /bdc_router
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:99)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.getChildren(ZooKeeper.java:1532)
+	at org.apache.zookeeper.ZooKeeper.getChildren(ZooKeeper.java:1560)
+	at com.bosszhipin.bdc.router.zk.ZKRouterConnection$Ping.run(ZKRouterConnection.java:105)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+ERROR [Timer-0] 2016-05-07 21:46:18,700 ZKRouterConnection.java run (line 58) zookeeper reconnect error
+org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /bdc_router
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:99)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.getChildren(ZooKeeper.java:1532)
+	at org.apache.zookeeper.ZooKeeper.getChildren(ZooKeeper.java:1560)
+	at com.bosszhipin.bdc.router.zk.ZKRouterConnection$Reconnecter.run(ZKRouterConnection.java:55)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+ERROR [Timer-1] 2016-05-07 21:46:18,700 ZKRouterConnection.java run (line 115) zookeeper ping error
+org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /bdc_router
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:99)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.getChildren(ZooKeeper.java:1532)
+	at org.apache.zookeeper.ZooKeeper.getChildren(ZooKeeper.java:1560)
+	at com.bosszhipin.bdc.router.zk.ZKRouterConnection$Ping.run(ZKRouterConnection.java:105)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+ERROR [Timer-0] 2016-05-07 21:46:28,801 ZKRouterConnection.java run (line 58) zookeeper reconnect error
+org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /bdc_router
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:99)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.getChildren(ZooKeeper.java:1532)
+	at org.apache.zookeeper.ZooKeeper.getChildren(ZooKeeper.java:1560)
+	at com.bosszhipin.bdc.router.zk.ZKRouterConnection$Reconnecter.run(ZKRouterConnection.java:55)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+ERROR [Timer-1] 2016-05-07 21:46:28,801 ZKRouterConnection.java run (line 115) zookeeper ping error
+org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /bdc_router
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:99)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.getChildren(ZooKeeper.java:1532)
+	at org.apache.zookeeper.ZooKeeper.getChildren(ZooKeeper.java:1560)
+	at com.bosszhipin.bdc.router.zk.ZKRouterConnection$Ping.run(ZKRouterConnection.java:105)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+ERROR [pool-1-thread-1] 2016-05-07 21:52:51,928 TransportSender.java run (line 53) error
+java.lang.NullPointerException
+	at com.bosszhipin.bdc.router.Scheduler.roundRobin(Scheduler.java:41)
+	at com.bosszhipin.bdc.router.Scheduler.getRemoteUrl(Scheduler.java:49)
+	at com.bosszhipin.bdc.router.blocking.TransportSender.run(TransportSender.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+ERROR [pool-1-thread-1] 2016-05-07 21:53:01,830 TransportSender.java run (line 53) error
+java.lang.NullPointerException
+	at com.bosszhipin.bdc.router.Scheduler.roundRobin(Scheduler.java:41)
+	at com.bosszhipin.bdc.router.Scheduler.getRemoteUrl(Scheduler.java:49)
+	at com.bosszhipin.bdc.router.blocking.TransportSender.run(TransportSender.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+ERROR [pool-1-thread-1] 2016-05-07 21:53:26,262 TransportSender.java run (line 53) error
+java.lang.NullPointerException
+	at com.bosszhipin.bdc.router.Scheduler.roundRobin(Scheduler.java:41)
+	at com.bosszhipin.bdc.router.Scheduler.getRemoteUrl(Scheduler.java:49)
+	at com.bosszhipin.bdc.router.blocking.TransportSender.run(TransportSender.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+ERROR [pool-1-thread-1] 2016-05-07 21:53:39,286 TransportSender.java run (line 53) error
+java.lang.NullPointerException
+	at com.bosszhipin.bdc.router.Scheduler.roundRobin(Scheduler.java:41)
+	at com.bosszhipin.bdc.router.Scheduler.getRemoteUrl(Scheduler.java:49)
+	at com.bosszhipin.bdc.router.blocking.TransportSender.run(TransportSender.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+ERROR [pool-1-thread-1] 2016-05-07 21:57:12,294 TransportSender.java run (line 53) error
+java.lang.NullPointerException
+	at com.bosszhipin.bdc.router.Scheduler.roundRobin(Scheduler.java:41)
+	at com.bosszhipin.bdc.router.Scheduler.getRemoteUrl(Scheduler.java:49)
+	at com.bosszhipin.bdc.router.blocking.TransportSender.run(TransportSender.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+ERROR [pool-1-thread-1] 2016-05-07 21:58:56,204 TransportSender.java run (line 53) error
+java.lang.NullPointerException
+	at com.bosszhipin.bdc.router.Scheduler.roundRobin(Scheduler.java:41)
+	at com.bosszhipin.bdc.router.Scheduler.getRemoteUrl(Scheduler.java:49)
+	at com.bosszhipin.bdc.router.blocking.TransportSender.run(TransportSender.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+ERROR [pool-1-thread-1] 2016-05-07 21:59:39,548 TransportSender.java run (line 53) error
+java.lang.NullPointerException
+	at com.bosszhipin.bdc.router.Scheduler.roundRobin(Scheduler.java:41)
+	at com.bosszhipin.bdc.router.Scheduler.getRemoteUrl(Scheduler.java:49)
+	at com.bosszhipin.bdc.router.blocking.TransportSender.run(TransportSender.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+ERROR [pool-1-thread-1] 2016-05-07 21:59:58,724 TransportSender.java run (line 53) error
+java.lang.NullPointerException
+	at com.bosszhipin.bdc.router.Scheduler.roundRobin(Scheduler.java:41)
+	at com.bosszhipin.bdc.router.Scheduler.getRemoteUrl(Scheduler.java:49)
+	at com.bosszhipin.bdc.router.blocking.TransportSender.run(TransportSender.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+ERROR [pool-1-thread-1] 2016-05-07 22:00:29,107 TransportSender.java run (line 53) error
+java.lang.NullPointerException
+	at com.bosszhipin.bdc.router.Scheduler.roundRobin(Scheduler.java:41)
+	at com.bosszhipin.bdc.router.Scheduler.getRemoteUrl(Scheduler.java:49)
+	at com.bosszhipin.bdc.router.blocking.TransportSender.run(TransportSender.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)

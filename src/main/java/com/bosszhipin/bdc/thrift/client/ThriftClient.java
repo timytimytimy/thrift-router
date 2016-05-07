@@ -1,5 +1,6 @@
 package com.bosszhipin.bdc.thrift.client;
 
+import org.apache.thrift.protocol.TBinaryProtocol;
 import org.apache.thrift.protocol.TCompactProtocol;
 import org.apache.thrift.protocol.TMultiplexedProtocol;
 import org.apache.thrift.protocol.TProtocol;
@@ -16,14 +17,15 @@ public class ThriftClient<T> {
     private String serviceName(Class<?> classType) {
         //        String[] items = classType.getName().split(".");
 //        return items[items.length - 1];
-        return classType.getName();
+        return classType.getName().split("\\$")[0];
     }
 
     public T getClinet(Class<T> clientType, String host, int port) {
         try {
             TSocket socket = new TSocket(host, port);
             TFramedTransport transport = new TFramedTransport(socket);
-            TCompactProtocol protocol = new TCompactProtocol(transport);
+//            TCompactProtocol protocol = new TCompactProtocol(transport);
+            TBinaryProtocol protocol = new TBinaryProtocol(transport);
             TMultiplexedProtocol tmp = new TMultiplexedProtocol(protocol, serviceName(clientType));
             transport.open();
             Constructor con = clientType.getDeclaredConstructor(new Class[]{TProtocol.class}); //用Object.class代替T

@@ -55,7 +55,7 @@ public class RouterServer {
     public static void main(String[] args) {
         RouterServer server = new RouterServer(9909);
         try {
-            server.init("192.168.254.103:2181", 10000, "/bdc_router");
+//            server.init("192.168.254.103:2181", 10000, "/bdc_router");
             server.serve();
         } catch (Exception e) {
             logger.error("启动失败", e);
